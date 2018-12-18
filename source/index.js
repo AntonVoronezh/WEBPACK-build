@@ -1,5 +1,5 @@
 import multiplyByTwo from './menu';
 
-const out = multiplyByTwo(3);
+const out = multiplyByTwo(4);
 
 document.write(out);

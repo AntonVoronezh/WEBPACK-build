@@ -12,13 +12,24 @@ module.exports = {
     output: {
         path: PATHS.build,
         filename: '[name].js'
-        
+
     },
     plugins: [
         new htmlWebpackPlugin({
-            title: 'webpack +++++++'
+            template: PATHS.source + '/index.pug'
         })
-    ]
+    ],
+    module: {
+        rules: [
+            {
+                test: /\.pug$/,
+                loader: 'pug-loader',
+                options: {
+                    pretty: true
+                }
+            }
+        ]
+    }
 };
 
 
