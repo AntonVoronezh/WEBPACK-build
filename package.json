@@ -4,7 +4,8 @@
   "description": "my build",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "webpack"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/AntonVoronezh/WEBPACK-build/issues"
   },
-  "homepage": "https://github.com/AntonVoronezh/WEBPACK-build#readme"
+  "homepage": "https://github.com/AntonVoronezh/WEBPACK-build#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  }
 }
