@@ -4,19 +4,11 @@ module.exports = {
 
     context: path.resolve(__dirname, 'src'),
 
-    entry: {
-
-        home: './Home',
-
-        shop: './Shop',
-
-        profile: './Profile'
-
-    },
+    entry: './init.js',
 
     output: {
 
-        filename: '[name].js',
+        filename: 'bundle.js',
 
         path: path.resolve(__dirname, 'dist')
 
