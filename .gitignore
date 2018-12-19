@@ -1,9 +1,1 @@
 node_modules
-# dist
-# build
-# *.log
-# *.json
-# .gitignore
-# .htmlhintrc
-# .jshintrc
-# gulpfile.js

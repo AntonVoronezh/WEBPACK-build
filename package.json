@@ -1,33 +1,22 @@
 {
   "name": "webpack-build",
   "version": "1.0.0",
-  "description": "my build",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "test",
-    "start": "webpack --watch",
-    "serv": "static build",
-    "dev": "webpack --mode development --watch"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AntonVoronezh/WEBPACK-build.git"
   },
-  "keywords": [
-    "webpack"
-  ],
-  "author": "AntonVoronezh",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AntonVoronezh/WEBPACK-build/issues"
   },
   "homepage": "https://github.com/AntonVoronezh/WEBPACK-build#readme",
   "devDependencies": {
-    "html-webpack-plugin": "^3.2.0",
-    "node-static": "^0.7.11",
-    "pug": "^2.0.3",
-    "pug-loader": "^2.4.0",
-    "webpack": "^4.27.1",
-    "webpack-cli": "^3.1.2"
+    "webpack": "^4.27.1"
   }
 }
