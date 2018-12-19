@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/AntonVoronezh/WEBPACK-build#readme",
   "devDependencies": {
-    "webpack": "^4.27.1"
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
   }
 }
