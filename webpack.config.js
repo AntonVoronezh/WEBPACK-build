@@ -1,4 +1,6 @@
 const path = require('path');
+const extractTextWebpack = require('extract-text-webpack-plugin');
+
 
 module.exports = {
 
@@ -6,11 +8,8 @@ module.exports = {
 
     entry: {
 
-        home: './Home',
-
-        shop: './Shop',
-
-        profile: './Profile'
+        index: './index',
+        vendor: ['jquery']
 
     },
 
@@ -22,12 +21,34 @@ module.exports = {
 
     },
 
-    resolve: {
+    module: {
 
-        extensions: ['.js']
+        rules: [
+
+            {
+                test: require.resolve('jquery'),
+                // use: ['style-loader', 'css-loader']
+                // use: extractTextWebpack.extract({
+
+                //     fallback: 'style-loader',
+                //     use: ['css-loader', 'less-loader']
+
+                // })
+            }
+
+        ]
 
     },
 
-    watch: false
+    // plugins: [
+
+    //     new extractTextWebpack({
+
+    //         filename: 'styles.css',
+    //         allChunks: true
+
+    //     })
+
+    // ]
 
 };
