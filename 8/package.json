@@ -1,0 +1,26 @@
+{
+  "name": "webpack-build",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntonVoronezh/WEBPACK-build.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntonVoronezh/WEBPACK-build/issues"
+  },
+  "homepage": "https://github.com/AntonVoronezh/WEBPACK-build#readme",
+  "devDependencies": {
+    "case-sensitive-paths-webpack-plugin": "^2.1.2",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
