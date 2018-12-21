@@ -1,0 +1,9 @@
+body {
+  background-color: #fff;
+}
+body:hover {
+  background-color: #ccc;
+}
+html {
+  padding: 0;
+}
