@@ -1,5 +1,5 @@
 const path = require('path');
-const extractTextWebpack = require('extract-text-webpack-plugin');
+const htmlPlugin = require('html-webpack-plugin');
 
 
 module.exports = {
@@ -20,20 +20,15 @@ module.exports = {
 
     },
 
-    module: {
+    plugins: [
 
-        rules: [{
+        new htmlPlugin({
 
-           test: /\.png$/,
-           loader: 'file-loader',
-           options: {
-               name: '[path][name].[ext]'
-           }          
+            title: 'webpack dev server'
 
-           
-        }]
+        })
 
-    }
+    ]
 
 
 };

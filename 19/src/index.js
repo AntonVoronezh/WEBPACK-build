@@ -1,3 +1,1 @@
-import logo from './img/webpack.png';
-
-console.log(logo);
+console.log(1 + 3);
