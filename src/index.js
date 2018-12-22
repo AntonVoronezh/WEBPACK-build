@@ -1,1 +1,1 @@
-console.log($);
+import './style.css';

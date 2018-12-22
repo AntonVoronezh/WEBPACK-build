@@ -1,5 +1,6 @@
 const path = require('path');
-const extractTextWebpack = require('extract-text-webpack-plugin');
+const webpack = require('webpack');
+const htmlPlugin = require('html-webpack-plugin');
 
 
 module.exports = {
@@ -9,13 +10,12 @@ module.exports = {
     entry: {
 
         index: './index',
-        vendor: ['jquery']
 
     },
 
     output: {
 
-        filename: '[name].js',
+        filename: 'bundle.js',
 
         path: path.resolve(__dirname, 'dist')
 
@@ -24,31 +24,34 @@ module.exports = {
     module: {
 
         rules: [
-
             {
-                test: require.resolve('jquery'),
-                // use: ['style-loader', 'css-loader']
-                // use: extractTextWebpack.extract({
-
-                //     fallback: 'style-loader',
-                //     use: ['css-loader', 'less-loader']
-
-                // })
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
             }
+
+
 
         ]
 
     },
 
-    // plugins: [
+    plugins: [
 
-    //     new extractTextWebpack({
+        new htmlPlugin({
 
-    //         filename: 'styles.css',
-    //         allChunks: true
+            title: 'webpack dev server'
 
-    //     })
+        }),
 
-    // ]
+        new webpack.HotModuleReplacementPlugin()
+
+    ],
+
+    devServer: {
+
+        hot: true
+
+    }
+
 
 };
